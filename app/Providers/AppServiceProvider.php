@@ -20,9 +20,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->app->singleton(
-            Gateway::class,
-            function ($app) {
+        $this->app->singleton(Gateway::class, function($app){
                 return new Gateway(
                     [
                         'environment' => 'sandbox',

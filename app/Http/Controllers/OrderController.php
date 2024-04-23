@@ -37,7 +37,7 @@ class OrderController extends Controller
             'amount' => $request->amount,
             'paymentMethodNonce' => $request->token,
             'options' => [
-                'submitForSettlement' => True
+            'submitForSettlement' => True
             ]
         ]);
 
