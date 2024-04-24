@@ -10,6 +10,6 @@ class ProductController extends Controller
 {
     public function index(){
         $products = Product::all();
-        return  response()->json($products, 200);
+        return  view('indexpage', compact('products'));
     }
 }

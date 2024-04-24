@@ -16,7 +16,7 @@ Route::get('/user', function (Request $request) {
 //Rotta get products
 Route::get('orders/generate',[OrderController::class, 'generate']);
 
-//Rotta post productsv
+//Rotta post products
 Route::post('orders/make/payment',[OrderController::class, 'makePayment']);
 
 
