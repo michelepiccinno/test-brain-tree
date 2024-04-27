@@ -17,11 +17,11 @@
 
 <body>
     <div id="app">
-        <div class="container">
-            <div class="row g-5">
+        <div class="container pt-5">
+            <div class="row">
                 @foreach ($products as $product)
-                    <div class="col">
-                        <div class="card text-center">
+                    <div class="col d-flex justify-content-center">
+                        <div class="card">
                             <img class="card-img" src="{{ $product->img }}" alt="">
                             <div class="card-body">
                                 <div class="card-title">
@@ -32,17 +32,14 @@
                                 </div>
                                 <span>PREZZO {{ $product->price }}</span>
                             </div>
-                            <a class="bg-info p-2" href="">ACQUISTA</a>                  
+                            <a class="btn btn-info w-50 m-auto mb-1" href="{{ route('token', ['id' => $product->id]) }}">ACQUISTA</a>
                         </div>
                     </div>
                 @endforeach
-                <div class="col">
-
-                </div>
             </div>
         </div>
 
-        <script src="js/main.js"></script>
+        {{--  <script src="js/main.js"></script> --}}
     </div>
 </body>
 

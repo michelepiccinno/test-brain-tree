@@ -19,6 +19,10 @@
 </head>
 
 <body>
+
+    <h5 class="text-center pt-5">STAI ACQUISTANDO IL PRODOTTO CON ID: {{ $productId }} </h5>
+    <h4 class="text-center pt-1">PREZZO {{ $productPrice }}</h4>
+
     <div class="py-12">
         @csrf
         <div id="dropin-container" style="display: flex;justify-content: center;align-items: center;"></div>
