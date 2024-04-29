@@ -11,14 +11,5 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-
-
-//Rotta get products
-Route::get('orders/generate',[OrderController::class, 'generate']);
-
-//Rotta post products
-Route::post('orders/make/payment',[OrderController::class, 'makePayment']);
-
-
-//Rotta product index
+//Rotta API product index
 Route::get('products',[ProductController::class, 'index']);

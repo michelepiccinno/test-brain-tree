@@ -9,8 +9,11 @@ Route::get('/', function () {
 });
 
 /* Route::get('products', [BraintreeController::class, 'token'])->name('products');  */
+
 Route::any('/payment', [BraintreeController::class, 'token'])->name('token');
 
-Route::get('/products', [ProductController::class, 'index']);
+Route::view('/oktransaction', 'oktransaction')->name('paymentSuccess');
+
+Route::get('/products', [ProductController::class, 'index'])->name('products');
 
 Route::any('/list', [BraintreeController::class, 'index'])->name('index');
