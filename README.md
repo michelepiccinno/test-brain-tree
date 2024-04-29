@@ -8,4 +8,9 @@
 </p>
 
 ## INFO
-Testing the braintree payment system
+
+- This is a test implementation of the brain tree payment system.
+There are 3 cards with 3 purchasable products.
+By clicking on the "buy" button, the controller retrieves the price of the selected product from the database and redirects to the page with the Braintree form where you can enter your credit card details.
+If the card details are formally correct it is possible to submit.
+If the transaction is successful, a confirmation appears.
